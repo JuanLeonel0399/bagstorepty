@@ -40,5 +40,6 @@ en los datos de paypal pone este correo: sb-m2nxd31544872@personal.example.com
 y esta contraseña: Juan1234
 ya que es un correo de pruebas para el proyecto.
 
+le saldra dos opciones pagar con saldo de Paypal y con visa, puede pagar con ambas, ya que son de pruebas.
 
 
