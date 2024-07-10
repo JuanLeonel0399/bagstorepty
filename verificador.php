@@ -67,6 +67,7 @@ if ($state == 'approved') {
     $sentencia->execute();
 
     $completado = $sentencia->rowCount();
+    session_destroy();
 } else {
     $mensajePay = "<h3>Hay un problema con el pago</h3>";
 }
