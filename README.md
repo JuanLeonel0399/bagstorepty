@@ -19,6 +19,8 @@ El proyecto trata de una pequeña tienda de bolsas, que puedes agregar al carrit
     ```sh
     git clone https://github.com/JuanLeonel0399/proyecto_final_tiendita.git
     ```
+    o lo descarga y lo coloca en la carpeta xampp/htdocs/
+    y lo pega en htdocs
 
 2. Configura tu entorno:
     - aqui usted actualiza las credenciales de la base de datos que están en la carpeta global, archivo config.php
