@@ -155,6 +155,7 @@ echo $mensajePay; */
     </p>
     <p>
         <?php
+        $date = new DateTime();
         if ($completado >= 1) {
             $sentencia = $pdo->prepare("SELECT * FROM detalleventa, productos WHERE detalleventa.idProd = productos.id AND detalleventa.idVenta = :id;");
             $sentencia->bindParam(":id", $ClaveVenta);
@@ -175,7 +176,7 @@ echo $mensajePay; */
                                 <h1 class="">Factura</h1>
                             </td>
                             <td>
-                                Fecha: <?php echo date("d/m/Y"); ?><br>
+                                Fecha: <?php echo $date->format("d/m/Y"); ?><br>
                                 Vencimiento: <?php echo date("d/m/Y", strtotime("+30 days")); ?>
                             </td>
                         </tr>
