@@ -21,11 +21,13 @@ El proyecto trata de una pequeña tienda de bolsas, que puedes agregar al carrit
     ```
 
 2. Configura tu entorno:
-    - Renombra `config.example.php` a `config.php` y actualiza las credenciales de la base de datos.
-    - Importa el archivo `backup.sql` a tu base de datos MySQL.
+    - aqui usted actualiza las credenciales de la base de datos que están en la carpeta global, archivo config.php
+    ## Importar Base de Datos
 
-3. Inicia tu servidor local y accede al proyecto desde el navegador.
+    1. Abra `phpMyAdmin` y cree una nueva base de datos llamada tienda
+    2. Haga clic en la pestaña `Importar`.
+    3. Seleccione el archivo `tienda.sql` y haz clic en `Importar` que está al final.
 
-## Uso
 
-Instrucciones sobre cómo usar el proyecto.
+
+3. Inicie el servidor local de xampp y acceda al proyecto.
