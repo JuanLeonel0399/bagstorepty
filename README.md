@@ -17,7 +17,7 @@ El proyecto trata de una pequeña tienda de bolsas, que puedes agregar al carrit
 
 1. Clona el repositorio:
     ```sh
-    git clone https://github.com/tu-usuario/tu-repositorio.git
+    git clone https://github.com/JuanLeonel0399/proyecto_final_tiendita.git
     ```
 
 2. Configura tu entorno:
