@@ -30,6 +30,15 @@ El proyecto trata de una pequeña tienda de bolsas, que puedes agregar al carrit
     2. Haga clic en la pestaña `Importar`.
     3. Seleccione el archivo `tienda.sql` y haz clic en `Importar` que está al final.
 
-
-
 3. Inicie el servidor local de xampp y acceda al proyecto.
+
+
+# Uso del proyecto
+
+al momento de poner el correo y apretar el boton de pagar, la enviará a un boton de paypal
+en los datos de paypal pone este correo: sb-m2nxd31544872@personal.example.com
+y esta contraseña: Juan1234
+ya que es un correo de pruebas para el proyecto.
+
+
+
