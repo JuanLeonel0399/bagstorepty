@@ -5,17 +5,9 @@ include('global/conexion.php');
 include('carrito.php');
 include("templates/cabecera.php");
 
-
-
-/* print_r($_GET); */
-
-$ClientID = "AXzEaSNRGASQCJva_8LVgzJx5UXvcf_hx951C73YpUdmjEBMtKbstrLp14_fGFxk5Ep-JLo27l7jimPz";
-$Secret = "EOIoYl0KhdNfjIGft9ylEWgTRTpguR0clByeyqeUj69d2AkvPoxQCd2BJ-iQ5GVptKd89uAsBaf9PTVN";
-
-
-$Login = curl_init("https://api-m.sandbox.paypal.com/v1/oauth2/token");
+$Login = curl_init(LINK."/v1/oauth2/token");
 curl_setopt($Login, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($Login, CURLOPT_USERPWD, $ClientID . ":" . $Secret);
+curl_setopt($Login, CURLOPT_USERPWD, IDCLI . ":" . SECRET);
 curl_setopt($Login, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
 
 $Respuesta = curl_exec($Login);
@@ -24,7 +16,7 @@ $objRespuesta = json_decode($Respuesta);
 $AccesToken = $objRespuesta->access_token;
 
 
-$venta = curl_init("https://api-m.sandbox.paypal.com/v1/payments/payment/" . $_GET['paymentID']);
+$venta = curl_init(LINK."/v1/payments/payment/" . $_GET['paymentID']);
 curl_setopt($venta, CURLOPT_HTTPHEADER, array("Content-Type: application/json", "Authorization: Bearer " . $AccesToken));
 curl_setopt($venta, CURLOPT_RETURNTRANSFER, true);
 
@@ -71,8 +63,7 @@ if ($state == 'approved') {
 } else {
     $mensajePay = "<h3>Hay un problema con el pago</h3>";
 }
-/* echo $ClaveVenta;
-echo $mensajePay; */
+
 ?>
 <style>
     .invoice-box {
@@ -162,7 +153,6 @@ echo $mensajePay; */
             $sentencia->bindParam(":id", $ClaveVenta);
             $sentencia->execute();
             $listaProd = $sentencia->fetchAll($pdo::FETCH_ASSOC);
-           /*  print_r($listaProd); */
         }
         ?>
     <div class=" invoice-box ">
