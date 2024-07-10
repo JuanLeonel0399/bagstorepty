@@ -200,11 +200,11 @@ echo $mensajePay; */
                     </table>
                 </td>
             </tr>
-            <tr class="heading">
-                <td>Método de pago</td>
+            <tr class="heading" >
+                <td colspan="2">Método de pago</td>
             </tr>
             <tr class="details">
-                <td>Paypal</td>
+                <td colspan="2">Paypal</td>
             </tr>
             <tr class="heading">
                 <td>Producto</td>
