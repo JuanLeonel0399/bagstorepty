@@ -27,7 +27,11 @@ if (!isset($_SESSION['CARRITO'])) {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active " href="index.php" aria-current="page">Bolsas
+                        <a class="nav-link active " href="index.php" aria-current="page">Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="nosotros.php" aria-current="page">Nosotros
                         </a>
                     </li>
                 </ul>
