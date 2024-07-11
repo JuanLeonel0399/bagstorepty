@@ -42,8 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin: 0;
         }
 
-        .txt a {
-            text-decoration: none;
+        .txt-a{
+            text-decoration:none;
+            color:#ccc;
         }
 
         .login-container {
@@ -105,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <div class="login-container">
+        <h1>Bags Store PTY</h1>
         <h2>Inicio de Sesión</h2>
         <form method="POST">
             <div class="input-group">
@@ -117,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <button type="submit">Iniciar Sesión</button>
         </form>
-        <button type="submit" class="mg-2"><a class="txt" href="registro.php">Registro</a></button>
+        <button type="submit" class="mg-2"><a class="txt-a" href="registro.php">Registro</a></button>
 
     </div>
 

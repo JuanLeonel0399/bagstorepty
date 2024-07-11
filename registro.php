@@ -34,9 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin: 0;
         }
 
-        .txt a{
-            text-decoration:none;
+        .txt-a {
+            text-decoration: none;
+            color: #ccc;
         }
+
         .login-container {
             background-color: #fff;
             padding: 20px 40px;
@@ -95,9 +97,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-<div class="login-container">
+    <div class="login-container">
+        <h1>Bags Store PTY</h1>
         <h2>Registro</h2>
-        <form  method="POST">
+        <form method="POST">
             <div class="input-group">
                 <label for="username">email</label>
                 <input type="email" id="username" name="email" required>
@@ -108,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <button type="submit">Registro</button>
         </form>
-         <button type="submit" class="mg-2"><a class="txt" href="inicio.php">Iniciar Sesion</a></button>
+        <button type="submit" class="mg-2"><a class="txt-a" href="inicio.php">Iniciar Sesion</a></button>
 
     </div>
 </body>
