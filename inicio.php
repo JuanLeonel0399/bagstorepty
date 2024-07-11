@@ -13,14 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = $sentencia->fetch();
 
     if ($user && password_verify($password, $user['password'])) {
-        echo "hola";
         $_SESSION['user_id'] = $user['id'];
-
         header('Location: index.php');
         exit;
     } else {
-        $error_message = 'Email o contraseña incorrectos.';
-        echo $error_message;
+        echo "<script>alert('Email o contraseña incorrectos')</script>";
     }
 }
 ?>
@@ -43,8 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin: 0;
         }
 
-        .txt-a{
-            text-decoration:none;
+        .txt-a {
+            text-decoration: none;
             color: #ffffff;
         }
 

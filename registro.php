@@ -7,11 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     $sentencia = $pdo->prepare("INSERT INTO usuarios (id, email, password) VALUES (NULL, :email, :password);");
-    if ($sentencia->execute(['email' => $email, 'password' => $password])) {
-        echo "Usuario registrado exitosamente.";
+    if ($sentencia->execute(['email' => $email, 'password' => $password])) {;
         header('Location: inicio.php');
     } else {
-        echo "Error al registrar el usuario";
+        echo "<script>alert('Error al registrar el usuario')</script>";
     }
 }
 ?>
