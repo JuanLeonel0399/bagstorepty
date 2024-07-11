@@ -47,6 +47,9 @@ if (!isset($_SESSION['CARRITO'])) {
                         </a>
                        
                     </li>
+                    <li>
+                        <a class="nav-link text-white" href="logout.php">Cerrar sesion</a>
+                    </li>
                 </ul>
 
 
