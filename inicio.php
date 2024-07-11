@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     } else {
         $error_message = 'Email o contraseña incorrectos.';
+        echo $error_message;
     }
 }
 ?>

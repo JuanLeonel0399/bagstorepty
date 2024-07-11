@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Usuario registrado exitosamente.";
         header('Location: inicio.php');
     } else {
-        echo "Error al registrar el usuario.";
+        echo "Error al registrar el usuario";
     }
 }
 ?>
