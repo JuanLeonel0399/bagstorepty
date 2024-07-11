@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         .txt-a {
             text-decoration: none;
-            color: #ccc;
+            color: #ffffff;
         }
 
         .login-container {
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="username">email</label>
                 <input type="email" id="username" name="email" required>
             </div>
-            <div class="input-group">
+            <div class="input-group">   
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" required>
             </div>

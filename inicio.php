@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         .txt-a{
             text-decoration:none;
-            color:#ccc;
+            color: #ffffff;
         }
 
         .login-container {
